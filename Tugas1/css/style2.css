@@ -1,93 +1,95 @@
 body {
-    font: 14px Arial;
-    width: 0 auto;
-    background-color: rgb(255, 255, 255);
+  font: 14px Arial;
+  width: 0 auto;
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .header {
-    margin: 5%;
+  margin: 5%;
 }
 
 p {
-    font-size: 16px;
-    color: #D6224C;
+  font-size: 16px;
+  color: #d6224c;
 }
 
 .btn {
-    cursor: pointer;
-    border-style: solid;
-    border-color: #FFC46B;
-    background-color: white;
-    padding: 15px;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 16px;
-    color: #FFC46B
+  cursor: pointer;
+  border-style: solid;
+  border-color: #ffc46b;
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffc46b;
 }
 
 .active,
 .btn:hover {
-    background-color: #FFC46B;
-    color: white;
+  background-color: #ffc46b;
+  color: white;
 }
 
 /* tanggal */
 .h-tanggal {
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #FFB74C;
-    color: #FFB74C;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #ffb74c;
+  color: #ffb74c;
 }
 
 .hasil-t {
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #18F3AB;
-    color: #18F3AB;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #18f3ab;
+  color: #18f3ab;
 }
 
 /* diskon */
 .h-diskon {
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #FF9058;
-    color: #FF9058;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #ff9058;
+  color: #ff9058;
 }
 
-.form>.harga,
+.form > .harga,
 .diskon {
-    padding: 15px;
+  padding: 15px;
 }
 
 .hasil-d {
-    margin-top: 30px;
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #288BF2;
-    color: #288BF2;
+  margin-top: 30px;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #288bf2;
+  color: #288bf2;
 }
 
 /* suhu */
 .h-suhu {
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #288BF2;
-    color: #288BF2;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #288bf2;
+  color: #288bf2;
 }
 
 .conv {
-    padding: 20px;
+  padding: 20px;
 }
 
 input {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 .hasil-s {
-    margin-top: 50px;
-    font: bold 40px arial;
-    text-shadow: 1px 1px 1px #FF9058;
-    color: #FF9058;
+  margin-top: 50px;
+  font: bold 40px arial;
+  text-shadow: 1px 1px 1px #ff9058;
+  color: #ff9058;
 }
+
+/* test */
