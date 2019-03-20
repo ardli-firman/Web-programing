@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="css/style2.css" />
+<div class="container">
+    <div class="header">
+        <h1 class="h-tanggal">Menampilkan hari dan tanggal</h1>
+    </div>
+    <p>Pencet tombol untuk menampilkan hari dan tanggal sekarang</p>
+    <button onclick="tampilkan()" class="btn" id="btn-tanggal">Tampilkan</button>
+    <p class="hasil-t" id="tanggal"></p>
+</div>
+<script>
+    function tampilkan() {
+        let btnTgl = document.getElementById("btn-tanggal");
+        let txtTgl = document.getElementById("tanggal");
+        let tanggal = new Date();
+        let listBln = [
+            "Januari",
+            "Februari",
+            "Maret",
+            "April",
+            "Mei",
+            "Juni",
+            "Juli",
+            "Agustus",
+            "September",
+            "Oktober",
+            "November",
+            "Desember"
+        ];
+
+        let listHari = [
+            "Minggu",
+            "Senin",
+            "Selasa",
+            "Rabu",
+            "Kamis",
+            "Jumat",
+            "Sabtu"
+        ];
+        let bulan = tanggal.getMonth();
+        let hari = tanggal.getDay();
+        let tgl = tanggal.getDate();
+        let tahun = tanggal.getFullYear();
+
+        if (btnTgl.classList.toggle("active")) {
+            txtTgl.style.display = "block";
+            txtTgl.innerHTML =
+                listHari[hari] + " , " + tgl + " " + listBln[bulan] + " " + tahun;
+        } else {
+            txtTgl.style.display = "none";
+        }
+    }
+</script>

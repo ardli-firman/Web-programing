@@ -1,0 +1,16 @@
+.navbar{
+	height: 100px;
+	background-color: purple;
+}
+.container{
+	padding: 1px;
+}
+.navbar li{
+	float: left;
+	padding: 20px;
+	background-color: red;
+}
+
+.navbar ol{
+	padding: 2px;
+}

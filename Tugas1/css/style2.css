@@ -1,0 +1,93 @@
+body {
+    font: 14px Arial;
+    width: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.header {
+    margin: 5%;
+}
+
+p {
+    font-size: 16px;
+    color: #D6224C;
+}
+
+.btn {
+    cursor: pointer;
+    border-style: solid;
+    border-color: #FFC46B;
+    background-color: white;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFC46B
+}
+
+.active,
+.btn:hover {
+    background-color: #FFC46B;
+    color: white;
+}
+
+/* tanggal */
+.h-tanggal {
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #FFB74C;
+    color: #FFB74C;
+}
+
+.hasil-t {
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #18F3AB;
+    color: #18F3AB;
+}
+
+/* diskon */
+.h-diskon {
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #FF9058;
+    color: #FF9058;
+}
+
+.form>.harga,
+.diskon {
+    padding: 15px;
+}
+
+.hasil-d {
+    margin-top: 30px;
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #288BF2;
+    color: #288BF2;
+}
+
+/* suhu */
+.h-suhu {
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #288BF2;
+    color: #288BF2;
+}
+
+.conv {
+    padding: 20px;
+}
+
+input {
+    margin: 10px auto;
+}
+
+.hasil-s {
+    margin-top: 50px;
+    font: bold 40px arial;
+    text-shadow: 1px 1px 1px #FF9058;
+    color: #FF9058;
+}

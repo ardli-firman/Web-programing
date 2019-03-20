@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="css/style2.css" />
+<div class="container">
+    <div class="header">
+        <h1 class="h-suhu">Konversi Suhu</h1>
+    </div>
+    <p>Pencet tombol konversi untuk mengkonversi suhu</p>
+    <div class="conv">
+        <select name="" id="1">
+            <option value="c">Celcius</option>
+            <option value="f">Farenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Reamur</option>
+        </select>
+        Ke
+        <select name="" id="2">
+            <option value="c">Celcius</option>
+            <option value="f">Farenheit</option>
+            <option value="k">Kelvin</option>
+            <option value="r">Reamur</option>
+        </select>
+    </div>
+    <div class="" style="clear: both;">Nilai : </div>
+    <input type="text" id="nilai">
+    <div class="" style="clear: both;"></div>
+    <button onclick="convert()" class="btn">Konversi</button>
+    <div class="hasil-s" id="hasil"></div>
+</div>
+<script>
+    let dari = document.getElementById('1');
+    let ke = document.getElementById('2');
+    let nilai = document.getElementById('nilai');
+    let hasil = document.getElementById('hasil');
+
+    function convert() {
+        let isiDari = dari.options[dari.selectedIndex].value;
+        let isiKe = ke.options[ke.selectedIndex].value;
+        let n = nilai.value;
+        let h;
+
+        if (n == "") {
+            alert('Isikan field');
+        } else {
+            if (isiDari == 'c') {
+                if (isiKe == 'c') {
+                    hasil.innerHTML = n + " &#8451";
+                } else if (isiKe == 'f') {
+                    h = n * 9 / 5 + 32;
+                    hasil.innerHTML = h + " &#8457";
+                } else if (isiKe == 'k') {
+                    h = 273.15 + parseInt(n);
+                    hasil.innerHTML = h + " &deg;&#8490";
+                } else if (isiKe == 'r') {
+                    h = 4 / 5 * n
+                    hasil.innerHTML = h + " &deg;R";
+                }
+            } else if (isiDari == 'f') {
+                if (isiKe == 'f') {
+                    hasil.innerHTML = n + " &#8457";
+                } else if (isiKe == 'c') {
+                    h = 5 / 9 * (n - 32);
+                    hasil.innerHTML = h + " &#8451";
+                } else if (isiKe == 'k') {
+                    h = (n - 32) * 5 / 9 + 273.15;
+                    hasil.innerHTML = h + " &deg;&#8490";
+                } else if (isiKe == 'r') {
+                    h = (n - 32) * 4 / 9;
+                    hasil.innerHTML = h + " &deg;R";
+                }
+            } else if (isiDari == 'k') {
+                if (isiKe == 'k') {
+                    hasil.innerHTML = n + " &deg;&#8490";
+                } else if (isiKe == 'c') {
+                    h = n - 273.15;
+                    hasil.innerHTML = h + " &#8451";
+                } else if (isiKe == 'f') {
+                    h = (n - 273.15) * 9 / 5 + 32
+                    hasil.innerHTML = h + " &#8457";
+                } else if (isiKe == 'r') {
+                    h = 4 / 9 * (n - 273);
+                    hasil.innerHTML = h + " &deg;R";
+                }
+            } else if (isiDari == 'r') {
+                if (isiKe == 'r') {
+                    hasil.innerHTML = n + " &deg;R";
+                } else if (isiKe == 'c') {
+                    h = 5 / 4 * n;
+                    hasil.innerHTML = h + " &#8451";
+                } else if (isiKe == 'f') {
+                    h = 9 / 4 * n + 32;
+                    hasil.innerHTML = h + " &#8457";
+                } else if (isiKe == 'k') {
+                    h = 5 / 4 * n + 273.15;
+                    hasil.innerHTML = h + " &deg;&#8490";
+                }
+            }
+        }
+    }
+</script>

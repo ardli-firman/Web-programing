@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="css/style2.css" />
+<div class="container">
+    <div class="header">
+        <h1 class="h-diskon">Besar Diskon</h1>
+    </div>
+    <p>Pencet tombol tampilkan untuk menampilkan besar harga setelah diskon</p>
+    <div class="form">
+        <div class="harga">
+            <label for="harga">Harga Barang : </label>
+            <input type="text" name="" id="harga">
+        </div>
+        <div class="" style="clear:both;"></div>
+        <div class="diskon">
+            <label for="diskon">Diskon Barang : </label>
+            <input type="number" name="" id="diskon"> %
+        </div>
+        <div class="" style="clear:both;"></div>
+        <button onclick="tampilkan()" class="btn">Tampilkan</button>
+        <div class="hasil-d" id="hasil"></div>
+    </div>
+</div>
+<script>
+    function tampilkan() {
+        let harga = document.getElementById('harga').value;
+        let diskon = document.getElementById('diskon').value;
+        let setelahDiskon = document.getElementById('hasil');
+
+        if (harga == "" || diskon == "") {
+            alert('Isi field yang tersedia');
+        } else {
+            if (diskon > 100) {
+                alert('Diskon maksimal 100%')
+            } else {
+                let hasil = eval(`harga - (harga*(diskon/100))`);
+                setelahDiskon.innerHTML = "Rp. " + hasil;
+            }
+        }
+
+
+
+
+    }
+</script>
