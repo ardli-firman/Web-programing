@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mata Uang</title>
+</head>
+
+<body>
+    <p>Pencet tombol konversi untuk mengkonversi Mata Uang</p>
+    <select name="" id="1">
+        <option value="d">Dollar</option>
+    </select>
+    Ke
+    <select name="" id="2">
+        <option value="d">Dollar</option>
+        <option value="r">Rupiah</option>
+        <option value="e">Euro</option>
+        <option value="ri">Ringgit</option>
+    </select>
+    </div>
+    <div style="clear: both;">Nilai : </div>
+    <input type="text" id="nilai">
+    <button onclick="convert()" class="btn">Konversi</button>
+    <div class="hasil-s" id="hasil"></div>
+</body>
+<script>
+    let dari = document.getElementById('1');
+    let ke = document.getElementById('2');
+    let nilai = document.getElementById('nilai');
+    let hasil = document.getElementById('hasil');
+
+    function convert() {
+        let isiDari = dari.options[dari.selectedIndex].value;
+        let isiKe = ke.options[ke.selectedIndex].value;
+        let n = nilai.value;
+        let h;
+
+        if (n == "") {
+            alert('Isikan field');
+        } else {
+            if (isiDari == 'd') {
+                if (isiKe == 'd') {
+                    hasil.innerHTML = n + " Dollar";
+                } else if (isiKe == 'r') {
+                    h = n * 14000;
+                    hasil.innerHTML = h + " Rupiah";
+                } else if (isiKe == 'e') {
+                    h = n * 0.88;
+                    hasil.innerHTML = h + " Euro";
+                } else if (isiKe == 'ri') {
+                    h = n * 4.12;
+                    hasil.innerHTML = h + " Ringgit";
+                }
+            }
+        }
+    }
+</script>
+</script>
+
+</html>
